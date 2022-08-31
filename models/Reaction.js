@@ -4,6 +4,7 @@ const dateFormat = require('../utils/dateFormat');
 
 // Reaction Schema
 const ReactionSchema = Schema({
+    //we created columns for schema
     reactionId: {
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
@@ -32,5 +33,5 @@ const ReactionSchema = Schema({
     id: false,
     _id: false
 });
-
+//here we export it
 module.exports = ReactionSchema;

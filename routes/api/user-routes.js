@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+//Set up CRUD
 const {
     getAllUser,
     getUserById,

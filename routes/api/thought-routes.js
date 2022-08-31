@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+//Set up CRUD
 const {
     getAllThought,
     getThoughtById,
@@ -35,5 +35,5 @@ router
 
 
 
-
+//export
 module.exports = router;
