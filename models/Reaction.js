@@ -11,7 +11,7 @@ const ReactionSchema = Schema({
     reactionBody: {
         type: String,
         maxlength: 280,
-        required: 'Please supply text for your reaction!',
+        required: true,
         trim: true
     },
     createdAt: {
@@ -21,7 +21,7 @@ const ReactionSchema = Schema({
     },
     username: {
         type: String,
-        required: 'Please supply a user name!'
+        required: true
     }
 },
 {

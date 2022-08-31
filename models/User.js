@@ -1,17 +1,17 @@
 const { Schema, model } = require('mongoose');
-const UserSchema = new Schema ({
+const UserSchema = Schema ({
  
-    userName: {
+    username: {
         type: String,
-        required: true,
         unique: true,
+        required: true,
         trim: true
       },
       email: {
         type: String,
-        required: true,
         unique: true,
-        match: [ /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Please supply a valid email address!']
+        required: true,
+        match: [ /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Please supply a valid email address!' ],
       },
       thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thought'}],
     // an array of _id references pointing to other User documents
@@ -33,7 +33,7 @@ UserSchema.virtual('friendCount').get(function() {
 
 
 
-const User = model('user', UserSchema);
+const User = model('User', UserSchema);
 
 
 
