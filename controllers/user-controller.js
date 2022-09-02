@@ -1,5 +1,5 @@
 //import the files from model
-const { User, Thought } = require('../models');
+const { User } = require('../models');
 // creted an object where we will perform CRUD
 const userController = {
     // get all users
