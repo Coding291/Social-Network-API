@@ -26,3 +26,5 @@ To run the application from the command line, run: "npm start"
 
 # Walkthrough Video Link
 
+https://drive.google.com/file/d/1QWl-mLJ9SCN1H1c3RuPb1yOVSHw72fwz/view?usp=sharing 
+
